@@ -14,8 +14,8 @@ let globalSdk = MMPixelSdk();
 
 public class MMPixelSdk {
     
-    lazy private var session = URLSession()
     private var isDebug = false
+    private static let userAgentStr = UserAgent.getUserAgent()
     
     
     public static func setDebugOutput(debug: Bool) {
@@ -43,7 +43,13 @@ public class MMPixelSdk {
             print("MMPixelSdk firing " + urlString)
         }
         
-        let task = URLSession.shared.dataTask(with: pixelUrl!) {(data, response, error) in
+        let config = URLSessionConfiguration.default
+        let headers: [String : String] = ["User-Agent": userAgentStr]
+        config.httpAdditionalHeaders = headers
+        let session = URLSession(configuration: config)
+
+        
+        let task = session.dataTask(with: pixelUrl!) {(data, response, error) in
             if error != nil {
                 print(error!)
             } else {
