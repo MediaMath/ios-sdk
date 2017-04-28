@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MMPixelExampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="ExampleContainer">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mm-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ydY-3G-axG">
+                                <rect key="frame" x="87" y="46" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="t4v-BO-hqd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advertiser ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsA-Kt-wEc" userLabel="AdvertiserID">
+                                <rect key="frame" x="56" y="312" width="100" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pixel ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWT-2T-sea" userLabel="PixelID">
+                                <rect key="frame" x="99" y="350" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Zb-fv-L3Q" userLabel="AdvertiserInput">
+                                <rect key="frame" x="170" y="307" width="130" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="AdvertiserField"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yh7-wf-qlX" userLabel="PixelInput">
+                                <rect key="frame" x="170" y="345" width="130" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="PixelField"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiH-Pa-D6o">
+                                <rect key="frame" x="137" y="397" width="163" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="5ij-GY-ZP2"/>
+                                    <constraint firstAttribute="height" constant="30" id="kgb-8K-iKc"/>
+                                </constraints>
+                                <state key="normal" title="Fire Pixel"/>
+                                <connections>
+                                    <action selector="firePixel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EqJ-WM-7u4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pour-over enamel pin farm-to-table snackwave, air plant pinterest street art. " textAlignment="center" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCZ-zo-d3J" userLabel="DebugOutput">
+                                <rect key="frame" x="7" y="476" width="387" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yh7-wf-qlX" firstAttribute="top" secondItem="9Zb-fv-L3Q" secondAttribute="bottom" constant="8" symbolic="YES" id="1Hq-4o-BS3"/>
+                            <constraint firstItem="VWT-2T-sea" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="79" id="2DD-xo-g6q"/>
+                            <constraint firstItem="yh7-wf-qlX" firstAttribute="leading" secondItem="9Zb-fv-L3Q" secondAttribute="leading" id="3on-q2-PRT"/>
+                            <constraint firstItem="9Zb-fv-L3Q" firstAttribute="leading" secondItem="dsA-Kt-wEc" secondAttribute="trailing" constant="14" id="40f-eW-OVH"/>
+                            <constraint firstAttribute="bottom" secondItem="WiH-Pa-D6o" secondAttribute="bottom" constant="309" id="5Tk-Zq-nfG"/>
+                            <constraint firstItem="VWT-2T-sea" firstAttribute="trailing" secondItem="dsA-Kt-wEc" secondAttribute="trailing" id="7yd-6P-ZYq"/>
+                            <constraint firstItem="YCZ-zo-d3J" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="BR6-qW-V3Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WiH-Pa-D6o" secondAttribute="trailing" constant="94" id="DOH-T2-n6C"/>
+                            <constraint firstItem="9Zb-fv-L3Q" firstAttribute="centerY" secondItem="dsA-Kt-wEc" secondAttribute="centerY" id="Ge1-Aa-KNH"/>
+                            <constraint firstItem="ydY-3G-axG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LhJ-oC-Qlq"/>
+                            <constraint firstItem="ydY-3G-axG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="67" id="Otw-bC-ahE"/>
+                            <constraint firstItem="yh7-wf-qlX" firstAttribute="centerY" secondItem="VWT-2T-sea" secondAttribute="centerY" id="RXn-sM-buq"/>
+                            <constraint firstItem="yh7-wf-qlX" firstAttribute="trailing" secondItem="9Zb-fv-L3Q" secondAttribute="trailing" id="TLx-Oa-0Sm"/>
+                            <constraint firstItem="WiH-Pa-D6o" firstAttribute="top" secondItem="yh7-wf-qlX" secondAttribute="bottom" constant="22" id="ViY-ss-1E9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YCZ-zo-d3J" secondAttribute="bottom" constant="190" id="Zub-fc-Rfb"/>
+                            <constraint firstItem="YCZ-zo-d3J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-13" id="feZ-He-rv1"/>
+                            <constraint firstItem="ydY-3G-axG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="26" id="iAD-nh-Mcv"/>
+                            <constraint firstItem="YCZ-zo-d3J" firstAttribute="top" secondItem="WiH-Pa-D6o" secondAttribute="bottom" constant="49" id="mQo-6x-tGo"/>
+                            <constraint firstItem="9Zb-fv-L3Q" firstAttribute="trailing" secondItem="WiH-Pa-D6o" secondAttribute="trailing" id="xOL-ST-6Sh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="advertiserInput" destination="9Zb-fv-L3Q" id="vJj-xF-al4"/>
+                        <outlet property="debugOutput" destination="YCZ-zo-d3J" id="yD5-sF-IaS"/>
+                        <outlet property="pixelInput" destination="yh7-wf-qlX" id="mAx-mG-BrW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78.260869565217391" y="124.72826086956523"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mm-logo.png" width="297" height="186"/>
+    </resources>
+</document>
