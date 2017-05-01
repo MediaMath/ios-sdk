@@ -21,8 +21,8 @@ class MMPixelConfig {
 class UserAgent {
     static func getUserAgent() -> String {
         let bundleDict = Bundle.main.infoDictionary!
-        let appName = bundleDict["CFBundleName"] as! String
-        let appVersion = bundleDict["CFBundleShortVersionString"] as! String
+        let appName = bundleDict["CFBundleName"] as? String ?? MMPixelConfig.MM_FRAMEWORK_NAME
+        let appVersion = bundleDict["CFBundleShortVersionString"] as? String ?? MMPixelConfig.MM_FRAMEWORK_VERSION
         let appDescriptor = appName + "/" + appVersion
         
         let currentDevice = UIDevice.current
