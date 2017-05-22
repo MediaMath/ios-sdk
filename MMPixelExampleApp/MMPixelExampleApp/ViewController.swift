@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import MMPixelSdk
+import MMPixelSDK
 
 class ViewController: UIViewController {
     
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         debugOutput.text = ""
-        MMPixelSdk.setDebugOutput(debug: true)
+        MMPixelSDK.setDebugOutput(debug: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         
         view.endEditing(true)
         debugOutput.text = "Trying to fire " + advertiserInput.text! + " " + pixelInput.text!
-        MMPixelSdk.report(advertiser: advertiserInput.text!, pixel: pixelInput.text!)
+        MMPixelSDK.report(advertiser: advertiserInput.text!, pixel: pixelInput.text!)
     }
     
 }

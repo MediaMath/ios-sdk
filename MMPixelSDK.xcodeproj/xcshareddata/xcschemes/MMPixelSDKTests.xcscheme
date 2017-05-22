@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -17,9 +17,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B44CEC451E96C70800696AD5"
-               BuildableName = "MMPixelSdkTests.xctest"
-               BlueprintName = "MMPixelSdkTests"
-               ReferencedContainer = "container:MMPixelSdk.xcodeproj">
+               BuildableName = "MMPixelSDKTests.xctest"
+               BlueprintName = "MMPixelSDKTests"
+               ReferencedContainer = "container:MMPixelSDK.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

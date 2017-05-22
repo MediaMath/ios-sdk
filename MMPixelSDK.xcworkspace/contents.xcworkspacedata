@@ -5,6 +5,6 @@
       location = "group:MMPixelExampleApp/MMPixelExampleApp.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:MMPixelSdk.xcodeproj">
+      location = "group:MMPixelSDK.xcodeproj">
    </FileRef>
 </Workspace>

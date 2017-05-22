@@ -13,9 +13,9 @@
 		B41CAA8E1EB26D5C0040743A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41CAA8C1EB26D5C0040743A /* LaunchScreen.storyboard */; };
 		B41CAA961EB26DBC0040743A /* mm-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B41CAA951EB26DBC0040743A /* mm-logo.png */; };
 		B41CAA9B1EB26F5B0040743A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41CAA9A1EB26F5B0040743A /* Main.storyboard */; settings = {ASSET_TAGS = (PixelField, ); }; };
-		B45813921EB27A8A00BF1DEE /* MMPixelSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B45813911EB27A8A00BF1DEE /* MMPixelSdk.framework */; };
-		B4BD482D1EB379A40007A786 /* MMPixelSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BD482C1EB379A40007A786 /* MMPixelSdk.framework */; };
-		B4BD482E1EB379A40007A786 /* MMPixelSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4BD482C1EB379A40007A786 /* MMPixelSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B45813921EB27A8A00BF1DEE /* MMPixelSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B45813911EB27A8A00BF1DEE /* MMPixelSDK.framework */; };
+		B4BD482D1EB379A40007A786 /* MMPixelSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BD482C1EB379A40007A786 /* MMPixelSDK.framework */; };
+		B4BD482E1EB379A40007A786 /* MMPixelSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4BD482C1EB379A40007A786 /* MMPixelSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B4BD482E1EB379A40007A786 /* MMPixelSdk.framework in Embed Frameworks */,
+				B4BD482E1EB379A40007A786 /* MMPixelSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,8 +41,8 @@
 		B41CAA8F1EB26D5C0040743A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B41CAA951EB26DBC0040743A /* mm-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mm-logo.png"; sourceTree = "<group>"; };
 		B41CAA9A1EB26F5B0040743A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		B45813911EB27A8A00BF1DEE /* MMPixelSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MMPixelSdk.framework; path = "../Build/Products/Debug-iphonesimulator/MMPixelSdk.framework"; sourceTree = "<group>"; };
-		B4BD482C1EB379A40007A786 /* MMPixelSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MMPixelSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B45813911EB27A8A00BF1DEE /* MMPixelSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MMPixelSDK.framework; path = "../Build/Products/Debug-iphonesimulator/MMPixelSDK.framework"; sourceTree = "<group>"; };
+		B4BD482C1EB379A40007A786 /* MMPixelSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MMPixelSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,8 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4BD482D1EB379A40007A786 /* MMPixelSdk.framework in Frameworks */,
-				B45813921EB27A8A00BF1DEE /* MMPixelSdk.framework in Frameworks */,
+				B4BD482D1EB379A40007A786 /* MMPixelSDK.framework in Frameworks */,
+				B45813921EB27A8A00BF1DEE /* MMPixelSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +61,7 @@
 		B41CAA771EB26D5C0040743A = {
 			isa = PBXGroup;
 			children = (
-				B4BD482C1EB379A40007A786 /* MMPixelSdk.framework */,
+				B4BD482C1EB379A40007A786 /* MMPixelSDK.framework */,
 				B41CAA821EB26D5C0040743A /* MMPixelExampleApp */,
 				B41CAA811EB26D5C0040743A /* Products */,
 				B45813901EB27A8900BF1DEE /* Frameworks */,
@@ -93,7 +93,7 @@
 		B45813901EB27A8900BF1DEE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B45813911EB27A8A00BF1DEE /* MMPixelSdk.framework */,
+				B45813911EB27A8A00BF1DEE /* MMPixelSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
