@@ -1,5 +1,5 @@
 //
-//  MMPixelSdkTests
+//  MMPixelSDKTests
 //
 //  Copyright © 2017 MediaMath. All rights reserved.
 //
@@ -7,15 +7,15 @@
 import XCTest
 import AdSupport
 
-@testable import MMPixelSdk
+@testable import MMPixelSDK
 
-class MMPixelSdkTests: XCTestCase {
+class MMPixelSDKTests: XCTestCase {
     
-    var mm = MMPixelSdk()
+    var mm = MMPixel()
     
     override func setUp() {
         super.setUp()
-        MMPixelSdk.setDebugOutput(debug: true)
+        MMPixel.setDebugOutput(debug: true)
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
@@ -29,7 +29,7 @@ class MMPixelSdkTests: XCTestCase {
         //https://pixel.mathtag.com/event/html?mt_adid=ADVERTISER_ID&mt_id=PIXEL_ID&mt_uuid=UUID&mt_idt=idfa&ADDITIONAL_PARAMETERS
         
         let expected = "https://pixel.mathtag.com/event/mob?mt_adid=123&mt_id=456"
-        let actual = mm.getPixelUrl(advertiser:123, pixel:456, addlParams:nil)
+        let actual = mm.getPixelUrl(advertiser: 123, pixel: 456, addlParams: nil)
         XCTAssert(actual.hasPrefix(expected), "Pixel URL should contain advertiser and pixel IDs")
         
     }
@@ -52,11 +52,11 @@ class MMPixelSdkTests: XCTestCase {
     
     
     func testFirePixelWithIntegers() {
-        MMPixelSdk.report(advertiser: 123, pixel: 456)
+        MMPixel.report(advertiser: 123, pixel: 456)
     }
     
     func testFirePixelWithStrings() {
-        MMPixelSdk.report(advertiser: "789", pixel: "012")
+        MMPixel.report(advertiser: "789", pixel: "012")
     }
     
 }

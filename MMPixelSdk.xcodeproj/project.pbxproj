@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B41CAA3D1EB123E80040743A /* MMPixelSdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44CEC4B1E96C70800696AD5 /* MMPixelSdkTests.swift */; };
-		B41CAA401EB1246D0040743A /* MMPixelSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44CEC3D1E96C70800696AD5 /* MMPixelSdk.framework */; };
-		B44CEC4E1E96C70800696AD5 /* MMPixelSdk.h in Headers */ = {isa = PBXBuildFile; fileRef = B44CEC401E96C70800696AD5 /* MMPixelSdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B44CEC581E96C79400696AD5 /* MMPixelSdk.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44CEC571E96C79400696AD5 /* MMPixelSdk.swift */; };
+		B41CAA3D1EB123E80040743A /* MMPixelSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44CEC4B1E96C70800696AD5 /* MMPixelSDKTests.swift */; };
+		B41CAA401EB1246D0040743A /* MMPixelSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44CEC3D1E96C70800696AD5 /* MMPixelSDK.framework */; };
+		B44CEC4E1E96C70800696AD5 /* MMPixelSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = B44CEC401E96C70800696AD5 /* MMPixelSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B44CEC581E96C79400696AD5 /* MMPixelSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44CEC571E96C79400696AD5 /* MMPixelSDK.swift */; };
 		B44CEC5A1E96CD1C00696AD5 /* MMPixelConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44CEC591E96CD1C00696AD5 /* MMPixelConfig.swift */; };
 /* End PBXBuildFile section */
 
@@ -20,18 +20,18 @@
 			containerPortal = B44CEC341E96C70800696AD5 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B44CEC3C1E96C70800696AD5;
-			remoteInfo = MMPixelSdk;
+			remoteInfo = MMPixelSDK;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B44CEC3D1E96C70800696AD5 /* MMPixelSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMPixelSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B44CEC401E96C70800696AD5 /* MMPixelSdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMPixelSdk.h; sourceTree = "<group>"; };
+		B44CEC3D1E96C70800696AD5 /* MMPixelSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMPixelSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44CEC401E96C70800696AD5 /* MMPixelSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMPixelSDK.h; sourceTree = "<group>"; };
 		B44CEC411E96C70800696AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B44CEC461E96C70800696AD5 /* MMPixelSdkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMPixelSdkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B44CEC4B1E96C70800696AD5 /* MMPixelSdkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMPixelSdkTests.swift; sourceTree = "<group>"; };
+		B44CEC461E96C70800696AD5 /* MMPixelSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMPixelSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44CEC4B1E96C70800696AD5 /* MMPixelSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMPixelSDKTests.swift; sourceTree = "<group>"; };
 		B44CEC4D1E96C70800696AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B44CEC571E96C79400696AD5 /* MMPixelSdk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMPixelSdk.swift; sourceTree = "<group>"; };
+		B44CEC571E96C79400696AD5 /* MMPixelSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMPixelSDK.swift; sourceTree = "<group>"; };
 		B44CEC591E96CD1C00696AD5 /* MMPixelConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMPixelConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B41CAA401EB1246D0040743A /* MMPixelSdk.framework in Frameworks */,
+				B41CAA401EB1246D0040743A /* MMPixelSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,8 +57,8 @@
 		B44CEC331E96C70800696AD5 = {
 			isa = PBXGroup;
 			children = (
-				B44CEC3F1E96C70800696AD5 /* MMPixelSdk */,
-				B44CEC4A1E96C70800696AD5 /* MMPixelSdkTests */,
+				B44CEC3F1E96C70800696AD5 /* MMPixelSDK */,
+				B44CEC4A1E96C70800696AD5 /* MMPixelSDKTests */,
 				B44CEC3E1E96C70800696AD5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,30 +67,30 @@
 		B44CEC3E1E96C70800696AD5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B44CEC3D1E96C70800696AD5 /* MMPixelSdk.framework */,
-				B44CEC461E96C70800696AD5 /* MMPixelSdkTests.xctest */,
+				B44CEC3D1E96C70800696AD5 /* MMPixelSDK.framework */,
+				B44CEC461E96C70800696AD5 /* MMPixelSDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B44CEC3F1E96C70800696AD5 /* MMPixelSdk */ = {
+		B44CEC3F1E96C70800696AD5 /* MMPixelSDK */ = {
 			isa = PBXGroup;
 			children = (
-				B44CEC401E96C70800696AD5 /* MMPixelSdk.h */,
+				B44CEC401E96C70800696AD5 /* MMPixelSDK.h */,
 				B44CEC411E96C70800696AD5 /* Info.plist */,
-				B44CEC571E96C79400696AD5 /* MMPixelSdk.swift */,
+				B44CEC571E96C79400696AD5 /* MMPixelSDK.swift */,
 				B44CEC591E96CD1C00696AD5 /* MMPixelConfig.swift */,
 			);
-			path = MMPixelSdk;
+			path = MMPixelSDK;
 			sourceTree = "<group>";
 		};
-		B44CEC4A1E96C70800696AD5 /* MMPixelSdkTests */ = {
+		B44CEC4A1E96C70800696AD5 /* MMPixelSDKTests */ = {
 			isa = PBXGroup;
 			children = (
-				B44CEC4B1E96C70800696AD5 /* MMPixelSdkTests.swift */,
+				B44CEC4B1E96C70800696AD5 /* MMPixelSDKTests.swift */,
 				B44CEC4D1E96C70800696AD5 /* Info.plist */,
 			);
-			path = MMPixelSdkTests;
+			path = MMPixelSDKTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,16 +100,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B44CEC4E1E96C70800696AD5 /* MMPixelSdk.h in Headers */,
+				B44CEC4E1E96C70800696AD5 /* MMPixelSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B44CEC3C1E96C70800696AD5 /* MMPixelSdk */ = {
+		B44CEC3C1E96C70800696AD5 /* MMPixelSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B44CEC511E96C70800696AD5 /* Build configuration list for PBXNativeTarget "MMPixelSdk" */;
+			buildConfigurationList = B44CEC511E96C70800696AD5 /* Build configuration list for PBXNativeTarget "MMPixelSDK" */;
 			buildPhases = (
 				B44CEC381E96C70800696AD5 /* Sources */,
 				B44CEC391E96C70800696AD5 /* Frameworks */,
@@ -120,14 +120,14 @@
 			);
 			dependencies = (
 			);
-			name = MMPixelSdk;
-			productName = MMPixelSdk;
-			productReference = B44CEC3D1E96C70800696AD5 /* MMPixelSdk.framework */;
+			name = MMPixelSDK;
+			productName = MMPixelSDK;
+			productReference = B44CEC3D1E96C70800696AD5 /* MMPixelSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B44CEC451E96C70800696AD5 /* MMPixelSdkTests */ = {
+		B44CEC451E96C70800696AD5 /* MMPixelSDKTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B44CEC541E96C70800696AD5 /* Build configuration list for PBXNativeTarget "MMPixelSdkTests" */;
+			buildConfigurationList = B44CEC541E96C70800696AD5 /* Build configuration list for PBXNativeTarget "MMPixelSDKTests" */;
 			buildPhases = (
 				B44CEC421E96C70800696AD5 /* Sources */,
 				B44CEC431E96C70800696AD5 /* Frameworks */,
@@ -138,9 +138,9 @@
 			dependencies = (
 				B44CEC491E96C70800696AD5 /* PBXTargetDependency */,
 			);
-			name = MMPixelSdkTests;
-			productName = MMPixelSdkTests;
-			productReference = B44CEC461E96C70800696AD5 /* MMPixelSdkTests.xctest */;
+			name = MMPixelSDKTests;
+			productName = MMPixelSDKTests;
+			productReference = B44CEC461E96C70800696AD5 /* MMPixelSDKTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -165,7 +165,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B44CEC371E96C70800696AD5 /* Build configuration list for PBXProject "MMPixelSdk" */;
+			buildConfigurationList = B44CEC371E96C70800696AD5 /* Build configuration list for PBXProject "MMPixelSDK" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -177,8 +177,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B44CEC3C1E96C70800696AD5 /* MMPixelSdk */,
-				B44CEC451E96C70800696AD5 /* MMPixelSdkTests */,
+				B44CEC3C1E96C70800696AD5 /* MMPixelSDK */,
+				B44CEC451E96C70800696AD5 /* MMPixelSDKTests */,
 			);
 		};
 /* End PBXProject section */
@@ -206,7 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B44CEC5A1E96CD1C00696AD5 /* MMPixelConfig.swift in Sources */,
-				B44CEC581E96C79400696AD5 /* MMPixelSdk.swift in Sources */,
+				B44CEC581E96C79400696AD5 /* MMPixelSDK.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B41CAA3D1EB123E80040743A /* MMPixelSdkTests.swift in Sources */,
+				B41CAA3D1EB123E80040743A /* MMPixelSDKTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +223,7 @@
 /* Begin PBXTargetDependency section */
 		B44CEC491E96C70800696AD5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B44CEC3C1E96C70800696AD5 /* MMPixelSdk */;
+			target = B44CEC3C1E96C70800696AD5 /* MMPixelSDK */;
 			targetProxy = B44CEC481E96C70800696AD5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -337,7 +337,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MMPixelSdk/Info.plist;
+				INFOPLIST_FILE = MMPixelSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mediamath.PixelSdk;
@@ -357,7 +357,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MMPixelSdk/Info.plist;
+				INFOPLIST_FILE = MMPixelSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mediamath.PixelSdk;
@@ -372,9 +372,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3BKLR3UPAN;
-				INFOPLIST_FILE = MMPixelSdkTests/Info.plist;
+				INFOPLIST_FILE = MMPixelSDKTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mediamath.MMPixelSdkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = mediamath.MMPixelSDKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -385,9 +385,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3BKLR3UPAN;
-				INFOPLIST_FILE = MMPixelSdkTests/Info.plist;
+				INFOPLIST_FILE = MMPixelSDKTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mediamath.MMPixelSdkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = mediamath.MMPixelSDKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -396,7 +396,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B44CEC371E96C70800696AD5 /* Build configuration list for PBXProject "MMPixelSdk" */ = {
+		B44CEC371E96C70800696AD5 /* Build configuration list for PBXProject "MMPixelSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B44CEC4F1E96C70800696AD5 /* Debug */,
@@ -405,7 +405,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B44CEC511E96C70800696AD5 /* Build configuration list for PBXNativeTarget "MMPixelSdk" */ = {
+		B44CEC511E96C70800696AD5 /* Build configuration list for PBXNativeTarget "MMPixelSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B44CEC521E96C70800696AD5 /* Debug */,
@@ -414,7 +414,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B44CEC541E96C70800696AD5 /* Build configuration list for PBXNativeTarget "MMPixelSdkTests" */ = {
+		B44CEC541E96C70800696AD5 /* Build configuration list for PBXNativeTarget "MMPixelSDKTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B44CEC551E96C70800696AD5 /* Debug */,

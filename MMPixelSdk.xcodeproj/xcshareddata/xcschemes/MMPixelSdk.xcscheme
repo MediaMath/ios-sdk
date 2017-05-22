@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B44CEC3C1E96C70800696AD5"
-               BuildableName = "MMPixelSdk.framework"
-               BlueprintName = "MMPixelSdk"
-               ReferencedContainer = "container:MMPixelSdk.xcodeproj">
+               BuildableName = "MMPixelSDK.framework"
+               BlueprintName = "MMPixelSDK"
+               ReferencedContainer = "container:MMPixelSDK.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B44CEC451E96C70800696AD5"
-               BuildableName = "MMPixelSdkTests.xctest"
-               BlueprintName = "MMPixelSdkTests"
-               ReferencedContainer = "container:MMPixelSdk.xcodeproj">
+               BuildableName = "MMPixelSDKTests.xctest"
+               BlueprintName = "MMPixelSDKTests"
+               ReferencedContainer = "container:MMPixelSDK.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B44CEC3C1E96C70800696AD5"
-            BuildableName = "MMPixelSdk.framework"
-            BlueprintName = "MMPixelSdk"
-            ReferencedContainer = "container:MMPixelSdk.xcodeproj">
+            BuildableName = "MMPixelSDK.framework"
+            BlueprintName = "MMPixelSDK"
+            ReferencedContainer = "container:MMPixelSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B44CEC3C1E96C70800696AD5"
-            BuildableName = "MMPixelSdk.framework"
-            BlueprintName = "MMPixelSdk"
-            ReferencedContainer = "container:MMPixelSdk.xcodeproj">
+            BuildableName = "MMPixelSDK.framework"
+            BlueprintName = "MMPixelSDK"
+            ReferencedContainer = "container:MMPixelSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B44CEC3C1E96C70800696AD5"
-            BuildableName = "MMPixelSdk.framework"
-            BlueprintName = "MMPixelSdk"
-            ReferencedContainer = "container:MMPixelSdk.xcodeproj">
+            BuildableName = "MMPixelSDK.framework"
+            BlueprintName = "MMPixelSDK"
+            ReferencedContainer = "container:MMPixelSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

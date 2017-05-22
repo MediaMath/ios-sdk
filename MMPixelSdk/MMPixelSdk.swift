@@ -1,6 +1,6 @@
 //
-//  MMPixelSdk.swift
-//  MMPixelSdk
+//  MMPixelSDK.swift
+//  MMPixelSDK
 
 //  Copyright © 2017 MediaMath. All rights reserved.
 //
@@ -9,10 +9,10 @@ import Foundation
 import AdSupport
 
 // We declare this here because there isn't any support yet for class var / class let
-let globalSdk = MMPixelSdk();
+let globalSdk = MMPixel();
 
 
-public class MMPixelSdk {
+public class MMPixel {
     
     private var isDebug = false
     private static let userAgentStr = UserAgent.getUserAgent()
@@ -40,11 +40,11 @@ public class MMPixelSdk {
         let pixelUrl = URL(string: urlString)
         
         if (globalSdk.isDebug) {
-            print("MMPixelSdk firing " + urlString)
+            print("MMPixelSDK firing " + urlString)
         }
         
         let config = URLSessionConfiguration.default
-        let headers: [String : String] = ["User-Agent": userAgentStr]
+        let headers: [String: String] = ["User-Agent": userAgentStr]
         config.httpAdditionalHeaders = headers
         let session = URLSession(configuration: config)
 
@@ -63,9 +63,9 @@ public class MMPixelSdk {
     }
     
     
-    func getPixelUrl(advertiser: Int, pixel: Int, addlParams : String?) -> String {
+    func getPixelUrl(advertiser: Int, pixel: Int, addlParams: String?) -> String {
         let timeNow = UInt64(NSDate().timeIntervalSince1970)
-        let mmFormat = MMPixelConfig.MM_MATHTAG_URL
+        let mmFormat = MMPixelConfig.MathTagURL
         
         var urlString = String(format: mmFormat, arguments: [advertiser, pixel, timeNow])
         
