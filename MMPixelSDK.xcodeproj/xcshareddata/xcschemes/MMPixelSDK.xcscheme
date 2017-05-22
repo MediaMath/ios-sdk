@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B44CEC451E96C70800696AD5"
+               BuildableName = "MMPixelSDKTests.xctest"
+               BlueprintName = "MMPixelSDKTests"
+               ReferencedContainer = "container:MMPixelSDK.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B44CEC3C1E96C70800696AD5"
+            BuildableName = "MMPixelSDK.framework"
+            BlueprintName = "MMPixelSDK"
+            ReferencedContainer = "container:MMPixelSDK.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
