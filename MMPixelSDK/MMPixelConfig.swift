@@ -13,7 +13,7 @@ struct MMPixelConfig {
     static let FrameworkVersion = "1.0"
 }
 
-class UserAgent {
+struct UserAgent {
     static func getUserAgent() -> String {
         let bundleDict = Bundle.main.infoDictionary!
         let appName = bundleDict["CFBundleName"] as? String ?? MMPixelConfig.FrameworkName
@@ -39,4 +39,5 @@ class UserAgent {
         let hardware: String = String.init(validatingUTF8: hw_machine)!
         return hardware
     }
+    
 }

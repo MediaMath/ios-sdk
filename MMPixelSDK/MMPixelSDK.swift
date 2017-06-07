@@ -34,6 +34,19 @@ public class MMPixel {
         report(advertiser: adv, pixel: pix, addlParams: addlParams)
     }
     
+    public static func report(advertiser: String, pixel: String, addlParams: [String: String]) {
+        let adv = Int(advertiser)!
+        let pix = Int(pixel)!
+        let addlParamsString = getAddlParamsString(addlParams: addlParams)
+        report(advertiser: adv, pixel: pix, addlParams: addlParamsString)
+    }
+
+
+    public static func report(advertiser: Int, pixel: Int, addlParams: [String: String]) {
+        let addlParamsString = getAddlParamsString(addlParams: addlParams)
+        report(advertiser: advertiser, pixel: pixel, addlParams: addlParamsString)
+    }
+    
     
     public static func report(advertiser: Int, pixel: Int, addlParams: String? = nil) {
         let urlString = globalSdk.getPixelUrl(advertiser: advertiser, pixel: pixel, addlParams: addlParams)
@@ -70,7 +83,7 @@ public class MMPixel {
         var urlString = String(format: mmFormat, arguments: [advertiser, pixel, timeNow])
         
         urlString += getTrackingParams(optedOut: isUserOptedOut());
-        if ((addlParams) != nil) {
+        if !(addlParams ?? "").isEmpty {
             urlString += "&" + addlParams!
         }
         
@@ -100,7 +113,19 @@ public class MMPixel {
         }
         
         
-        return "?mt_uuid=" + idfa
-        
+        return "?mt_uuid=" + idfa   
     }
+
+    static func getAddlParamsString(addlParams: [String: String]? = nil) -> String{
+        var addlParamsString = ""
+        var addlParamsArray: [String] = []
+        if ((addlParams) != nil) {
+            for (parameter, value) in addlParams! {
+                addlParamsArray.append(parameter + "=" + value)
+            }
+        }
+        addlParamsString = addlParamsArray.joined(separator: "&")
+        return addlParamsString
+    }
+    
 }
