@@ -9,7 +9,7 @@ import Foundation
 
 struct MMPixelConfig {
     static let MathTagURL: String = "https://pixel.mathtag.com/event/mob?mt_adid=%d&mt_id=%d&mt_time=%lu&mt_idt=idfa"
-    static let FrameworkName = "MMPixelDK"
+    static let FrameworkName = "MMPixelSDK"
     static let FrameworkVersion = "1.0"
 }
 
