@@ -59,4 +59,21 @@ class MMPixelSDKTests: XCTestCase {
         MMPixel.report(advertiser: "789", pixel: "012")
     }
     
+    func testFirePixelWithStringsAndParamsDict() {
+        let addlParams = ["test1":"val1", "test2":"val2"]
+        MMPixel.report(advertiser: "789", pixel: "012", addlParams: addlParams)
+    }
+    
+    func testFirePixelWithIntegerssAndParamsDict() {
+        let addlParams = ["test1":"val1", "test2":"val2"]
+        MMPixel.report(advertiser: 789, pixel: 012, addlParams: addlParams)
+    }
+    
+    func testGetAddlParamsString() {
+        let addlParams = ["test1":"val1", "test2":"val2"]
+        let str = MMPixel.getAddlParamsString(addlParams: addlParams)
+        let expected = "test1=val1&test2=val2"
+        
+        XCTAssertEqual(str, expected, "AddlParams should be url stringified")
+    }
 }
