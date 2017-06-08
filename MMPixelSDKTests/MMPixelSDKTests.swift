@@ -35,9 +35,9 @@ class MMPixelSDKTests: XCTestCase {
     }
     
     func testGetPixelUrlWithAddlParams() {
-        let addlParams = "foo1=lol"
+        let addlParams = "foo1=bar"
         let actual = mm.getPixelUrl(advertiser: 123, pixel: 456, addlParams: addlParams)
-        XCTAssert(actual.hasSuffix("&foo1=lol"), "Pixel URL should end in additionalParams string")
+        XCTAssert(actual.hasSuffix("&foo1=bar"), "Pixel URL should end in additionalParams string")
         
     }
 
