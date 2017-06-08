@@ -1,0 +1,9 @@
+//
+//  CommonCrypto.xcconfig
+//  MMPixelSDK
+//
+//  Copyright © 2017 MediaMath. All rights reserved.
+//
+
+MODULEMAP_FILE[sdk=iphoneos*] = ./CommonCrypto/iphoneos.modulemap
+MODULEMAP_FILE[sdk=iphonesimulator*] = ./CommonCrypto/iphonesimulator.modulemap
