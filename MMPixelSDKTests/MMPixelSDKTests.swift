@@ -35,9 +35,9 @@ class MMPixelSDKTests: XCTestCase {
     }
     
     func testGetPixelUrlWithAddlParams() {
-        let addlParams = "foo1=lol"
+        let addlParams = "foo1=bar"
         let actual = mm.getPixelUrl(advertiser: 123, pixel: 456, addlParams: addlParams)
-        XCTAssert(actual.hasSuffix("&foo1=lol"), "Pixel URL should end in additionalParams string")
+        XCTAssert(actual.hasSuffix("&foo1=bar"), "Pixel URL should end in additionalParams string")
         
     }
 
@@ -75,5 +75,13 @@ class MMPixelSDKTests: XCTestCase {
         let expected = "test1=val1&test2=val2"
         
         XCTAssertEqual(str, expected, "AddlParams should be url stringified")
+    }
+    
+    func testGetAddlParamsStringWithHashedEmail() {
+        let addlParams = ["test1":"val1", "test2":"val2", "mt_exem":"test@email.com"]
+        let str = MMPixel.getAddlParamsString(addlParams: addlParams)
+        let expected = "test1=val1&test2=val2&mt_exem=73062d872926c2a556f17b36f50e328ddf9bff9d403939bd14b6c3b7f5a33fc2"
+        
+        XCTAssertEqual(str, expected, "AddlParams should be url stringified and include hash")
     }
 }

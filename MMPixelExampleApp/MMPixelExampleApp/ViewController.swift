@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         debugOutput.text = ""
-        MMPixelSDK.setDebugOutput(debug: true)
+        MMPixel.setDebugOutput(debug: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,8 +29,9 @@ class ViewController: UIViewController {
     @IBAction func firePixel(_ sender: Any) {
         
         view.endEditing(true)
+        let additionalParams = ["s1": "test", "mt_exem": "test@email.com"] // when using a dictionary, the mt_exem email is automatically hashed.
         debugOutput.text = "Trying to fire " + advertiserInput.text! + " " + pixelInput.text!
-        MMPixelSDK.report(advertiser: advertiserInput.text!, pixel: pixelInput.text!)
+        MMPixel.report(advertiser: advertiserInput.text!, pixel: pixelInput.text!, addlParams: additionalParams)
     }
     
 }

@@ -121,11 +121,16 @@ public class MMPixel {
         var addlParamsArray: [String] = []
         if ((addlParams) != nil) {
             for (parameter, value) in addlParams! {
-                addlParamsArray.append(parameter + "=" + value)
+                if(parameter == "mt_excl" || (parameter == "mt_exem" && value.contains("@")) ) {
+                    addlParamsArray.append(parameter + "=" + value.sha256())
+                }
+                else {
+                    addlParamsArray.append(parameter + "=" + value)
+                }
             }
         }
         addlParamsString = addlParamsArray.joined(separator: "&")
         return addlParamsString
     }
-    
+
 }
