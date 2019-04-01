@@ -104,15 +104,9 @@ public class MMPixel {
         }
         else {
             // use the IDFA
-            if let idfaUuuid = ASIdentifierManager.shared().advertisingIdentifier {
-                idfa = idfaUuuid.uuidString
-            }
-            else {
-                idfa = NSUUID().uuidString
-            }
+            idfa = ASIdentifierManager.shared().advertisingIdentifier.uuidString
         }
-        
-        
+
         return "?mt_uuid=" + idfa   
     }
 
