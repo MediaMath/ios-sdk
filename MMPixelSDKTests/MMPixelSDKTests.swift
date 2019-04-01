@@ -72,16 +72,21 @@ class MMPixelSDKTests: XCTestCase {
     func testGetAddlParamsString() {
         let addlParams = ["test1":"val1", "test2":"val2"]
         let str = MMPixel.getAddlParamsString(addlParams: addlParams)
-        let expected = "test1=val1&test2=val2"
-        
-        XCTAssertEqual(str, expected, "AddlParams should be url stringified")
+        let params = str.split(separator: "&")
+
+        XCTAssertEqual(params.count, 2, "url should contain the same number of params as AddlParams")
+        XCTAssertTrue(params.contains("test1=val1"), "AddlParams should be url stringified")
+        XCTAssertTrue(params.contains("test2=val2"), "AddlParams should be url stringified")
     }
     
     func testGetAddlParamsStringWithHashedEmail() {
         let addlParams = ["test1":"val1", "test2":"val2", "mt_exem":"test@email.com"]
         let str = MMPixel.getAddlParamsString(addlParams: addlParams)
-        let expected = "test1=val1&test2=val2&mt_exem=73062d872926c2a556f17b36f50e328ddf9bff9d403939bd14b6c3b7f5a33fc2"
+        let params = str.split(separator: "&")
         
-        XCTAssertEqual(str, expected, "AddlParams should be url stringified and include hash")
+        XCTAssertEqual(params.count, 3, "url should contain the same number of params as AddlParams")
+        XCTAssertTrue(params.contains("test1=val1"), "AddlParams should be url stringified")
+        XCTAssertTrue(params.contains("test2=val2"), "AddlParams should be url stringified")
+        XCTAssertTrue(params.contains("mt_exem=73062d872926c2a556f17b36f50e328ddf9bff9d403939bd14b6c3b7f5a33fc2"), "AddlParams should be url stringified")
     }
 }
