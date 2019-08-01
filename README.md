@@ -1,4 +1,6 @@
 # iOS-SDK
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FMediaMath%2Fios-sdk.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FMediaMath%2Fios-sdk?ref=badge_shield)
+
 A simple framework for firing MediaMath Pixels
 
 ## Usage
@@ -28,3 +30,7 @@ There is a `setDebugOutput(debug: Bool)` function for enabling the printing of d
 
 ### Example App
 Check out the `MMPixelExampleApp` for a simple implementation of the framework.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FMediaMath%2Fios-sdk.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FMediaMath%2Fios-sdk?ref=badge_large)
